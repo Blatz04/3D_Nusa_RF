@@ -72,8 +72,8 @@ def ReflectionDetection(source):
 #     return ( i > j );
 # }
 
-folder_path = "Tes"
-out_path = r"out"
+folder_path = "Gmbr"
+out_path = r"out1"
 if not os.path.exists(out_path):
     os.mkdir(out_path)
 x = 0
@@ -98,8 +98,8 @@ for i in os.listdir(folder_path):
     result = ReflectionDetection(img)
     #print(f'motor{i}, status: {result}')
     #print(f'Reflectance Status: {result}')
-    x += 1
-    if x == 1:
-        break
+    # x += 1
+    # if x == 1:
+    #     break
 
 cv.waitKey(0)
